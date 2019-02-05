@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+# edit
+
 function run-server-tests() {
     cd testsuite/integration-arquillian
     mvn install -B -nsu -Pauth-server-wildfly -DskipTests
