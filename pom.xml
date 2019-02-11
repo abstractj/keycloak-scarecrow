@@ -37,22 +37,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <product.rhsso.version>7.3.0.GA</product.rhsso.version>
-
-        <product.build-time>${timestamp}</product.build-time>
-
-        <wildfly.version>14.0.1.Final</wildfly.version>
-        <wildfly.build-tools.version>1.2.10.Final</wildfly.build-tools.version>
-        <eap.version>7.2.0.GA-redhat-00005</eap.version>
-        <eap.build-tools.version>1.2.10.Final</eap.build-tools.version>
-        <wildfly.core.version>6.0.2.Final</wildfly.core.version>
-
-        <jboss.as.version>7.2.0.Final</jboss.as.version>
-
-        <jboss.aesh.version>0.66.19</jboss.aesh.version>
-        <aesh.version>1.7</aesh.version>
-        <aesh.readline.version>1.10</aesh.readline.version>
-        <apache.httpcomponents.version>4.5.2</apache.httpcomponents.version>
+        
         <apache.httpcomponents.httpcore.version>4.4.4</apache.httpcomponents.httpcore.version>
         <apache.mime4j.version>0.6</apache.mime4j.version>
         <jboss.dmr.version>1.5.0.Final</jboss.dmr.version>
@@ -642,12 +627,7 @@
                 <version>${wildfly.version}</version>
                 <type>zip</type>
             </dependency>
-            <dependency>
-                <groupId>org.wildfly</groupId>
-                <artifactId>wildfly-web-feature-pack</artifactId>
-                <version>${wildfly.version}</version>
-                <type>zip</type>
-            </dependency>
+            
             <dependency>
                 <groupId>org.wildfly.core</groupId>
                 <artifactId>wildfly-subsystem-test</artifactId>
