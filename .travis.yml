@@ -8,16 +8,7 @@ env:
     - MAVEN_SKIP_RC=true
     - MAVEN_OPTS="-Xms512m -Xmx1536m"
   matrix:
-    - TESTS=unit
     - TESTS=server-group1
-    - TESTS=server-group2
-    - TESTS=server-group3
-    - TESTS=server-group4
-    - TESTS=adapter-tests
-    - TESTS=old
-    - TESTS=crossdc-server
-    - TESTS=crossdc-adapter
-    - TESTS=ssl
 
 jdk:
   - oraclejdk8
@@ -36,8 +27,5 @@ before_install:
 
 script: 
   - ./travis-run-tests.sh $TESTS
-
-after_success:
-  - .travis/docker-hub-master-trigger.sh
 
 sudo: false
