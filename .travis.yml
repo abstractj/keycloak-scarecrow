@@ -7,8 +7,6 @@ env:
   global:
     - MAVEN_SKIP_RC=true
     - MAVEN_OPTS="-Xms512m -Xmx1536m"
-  matrix:
-    - TESTS=server-group1
 
 jdk:
   - oraclejdk8
@@ -26,6 +24,6 @@ before_install:
   - "phantomjs --version"
 
 script: 
-  - ./travis-run-tests.sh $TESTS
+  - "echo Hello World!"
 
 sudo: false
