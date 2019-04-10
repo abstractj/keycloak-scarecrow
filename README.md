@@ -8,7 +8,7 @@ Open Source Identity and Access Management for modern Applications and Services.
 For more information about Keycloak visit [Keycloak homepage](http://keycloak.org) and [Keycloak blog](http://blog.keycloak.org).
 
 
-Building
+How to build
 --------
 
 Ensure you have JDK 8 (or newer), Maven 3.1.1 (or newer) and Git installed
